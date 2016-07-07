@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# Get the set directory and email address from constants.txt. Example content of constants.txt:
-#     /path/to/repo/Star-Wars-LCG-OCTGN/o8g/Sets
-#     user@email.com
-
+# Get the set directory and email address from constants.txt. Example in README.md.
 constants_path=$(dirname $0)/constants.txt
 
 IFS=$'\n' read -d '' -r -a lines < $constants_path
